@@ -1,3 +1,4 @@
+# This scripts is used to migration ISE guest accounts from 2.x to 3.x
 import base64
 import requests
 import json
