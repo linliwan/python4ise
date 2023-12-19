@@ -53,7 +53,7 @@ def create_guests(file_name, portal_id):
             # add portalID, this field is mandatory
             guest['GuestUser']['portalId'] = portal_id
             payload = json.dumps(guest)
-            post_response = requests.request("POST", guest_base_url1, data=payload, verify=False, headers=headers)
+            post_response = requests.request("POST", guest_base_url2, data=payload, verify=False, headers=headers)
             if post_response.status_code == 201:
                 print(f"{guest['GuestUser']['name']} created successfully.")
             else:
